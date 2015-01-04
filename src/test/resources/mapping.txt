@@ -617,7 +617,7 @@ com.google.common.base.Joiner -> a.a.a.b.av:
     long delay -> k
     java.util.concurrent.TimeUnit unit -> l
     java.util.Map classes -> m
-    org.artyomcool.retrace.StackTraceAnalyzer analyzer -> n
+    com.github.artyomcool.retrace.StackTraceAnalyzer analyzer -> n
     com.google.common.hash.PrimitiveSink[] val$hashers$5edf1eec -> o
     com.google.common.hash.AbstractCompositeHashFunction this$0 -> p
     long state -> q
@@ -656,7 +656,7 @@ com.google.common.base.Joiner -> a.a.a.b.av:
     com.google.common.collect.ForwardingImmutableMap stoppedGuard$4823340d -> X
     java.util.List listeners -> Y
     int val$lineNumberInt -> Z
-    org.artyomcool.retrace.StackTraceAnalyzer this$0 -> aa
+    com.github.artyomcool.retrace.StackTraceAnalyzer this$0 -> aa
     71:71:com.google.common.base.Ascii on$7c648049(java.lang.String) -> a
     78:78:com.google.common.base.Ascii on$27f19060(char) -> c
     96:96:java.lang.Appendable appendTo(java.lang.Appendable,java.lang.Iterable) -> a
@@ -714,7 +714,7 @@ com.google.common.base.Joiner -> a.a.a.b.av:
     68:68:java.lang.Object getEvent() -> t
     502:502:long access$700$54e98544(com.google.common.escape.CharEscaperBuilder) -> a
     502:502:java.util.concurrent.TimeUnit access$800$7753f670(com.google.common.escape.CharEscaperBuilder) -> b
-    32:32:org.artyomcool.retrace.ClassMapping getClass(java.lang.String) -> j
+    32:32:com.github.artyomcool.retrace.ClassMapping getClass(java.lang.String) -> j
     36:43:java.lang.String stacktrace(java.io.BufferedReader) -> a
     56:59:com.google.common.hash.PrimitiveSink putByte$3bf83d88(byte) -> a
     63:66:com.google.common.hash.PrimitiveSink putBytes$339cacd(byte[]) -> a
@@ -774,7 +774,7 @@ com.google.common.base.Joiner -> a.a.a.b.av:
     690:695:void fireFailedListeners(com.google.common.util.concurrent.Service) -> b
     699:705:void executeListeners() -> A
     709:715:void checkHealthy() -> o
-    65:65:boolean apply(org.artyomcool.retrace.MethodMapping) -> a
+    65:65:boolean apply(com.github.artyomcool.retrace.MethodMapping) -> a
     62:62:boolean apply(java.lang.Object) -> a
 com.google.common.base.Joiner$1 -> a.a.a.b.aw:
     java.lang.String val$nullText -> b
@@ -815,7 +815,7 @@ com.google.common.base.Joiner$MapJoiner -> a.a.a.b.az:
     java.util.concurrent.TimeUnit unit -> x
     com.google.common.io.GwtWorkarounds this$1$6c97d5be -> y
     java.util.Map classes -> z
-    org.artyomcool.retrace.StackTraceAnalyzer analyzer -> A
+    com.github.artyomcool.retrace.StackTraceAnalyzer analyzer -> A
     313:313:java.lang.Appendable appendTo(java.lang.Appendable,java.util.Map) -> a
     322:322:java.lang.StringBuilder appendTo(java.lang.StringBuilder,java.util.Map) -> a
     330:330:java.lang.String join(java.util.Map) -> a
@@ -867,7 +867,7 @@ com.google.common.base.Joiner$MapJoiner -> a.a.a.b.az:
     502:502:java.util.concurrent.TimeUnit access$800$7753f670(com.google.common.escape.CharEscaperBuilder) -> b
     479:480:void onSuccess(java.lang.Object) -> c
     484:489:void onFailure(java.lang.Throwable) -> a
-    32:32:org.artyomcool.retrace.ClassMapping getClass(java.lang.String) -> b
+    32:32:com.github.artyomcool.retrace.ClassMapping getClass(java.lang.String) -> b
     36:43:java.lang.String stacktrace(java.io.BufferedReader) -> a
 com.google.common.base.MoreObjects -> a.a.a.b.aA:
     com.google.common.base.CharMatcher trimmer -> a
@@ -12391,7 +12391,7 @@ com.google.common.escape.CharEscaperBuilder -> a.a.a.e.e:
     long delay -> c
     java.util.concurrent.TimeUnit unit -> d
     java.util.Map classes -> e
-    org.artyomcool.retrace.StackTraceAnalyzer analyzer -> f
+    com.github.artyomcool.retrace.StackTraceAnalyzer analyzer -> f
     java.io.Writer val$writer -> i
     89:93:com.google.common.escape.CharEscaperBuilder addEscape(char,java.lang.String) -> a
     100:104:com.google.common.escape.CharEscaperBuilder addEscapes(char[],java.lang.String) -> a
@@ -12401,7 +12401,7 @@ com.google.common.escape.CharEscaperBuilder -> a.a.a.e.e:
     68:68:java.lang.Object getEvent() -> f
     502:502:long access$700$54e98544(com.google.common.escape.CharEscaperBuilder) -> a
     502:502:java.util.concurrent.TimeUnit access$800$7753f670(com.google.common.escape.CharEscaperBuilder) -> b
-    32:32:org.artyomcool.retrace.ClassMapping getClass(java.lang.String) -> a
+    32:32:com.github.artyomcool.retrace.ClassMapping getClass(java.lang.String) -> a
     36:43:java.lang.String stacktrace(java.io.BufferedReader) -> a
     191:192:void write(char) -> a
     196:197:void flush() -> a
@@ -14683,7 +14683,7 @@ com.google.common.primitives.Doubles$LexicographicalComparator -> a.a.a.l.l:
 com.google.common.primitives.Floats -> a.a.a.l.m:
     int BYTES -> b
     int val$lineNumberInt -> a
-    org.artyomcool.retrace.StackTraceAnalyzer this$0 -> c
+    com.github.artyomcool.retrace.StackTraceAnalyzer this$0 -> c
     74:74:int hashCode(float) -> a
     92:92:int compare(float,float) -> a
     103:103:boolean isFinite(float) -> b
@@ -14706,7 +14706,7 @@ com.google.common.primitives.Floats -> a.a.a.l.m:
     600:610:java.lang.Float tryParse(java.lang.String) -> a
     54:54:int access$000(float[],float,int,int) -> c
     54:54:int access$100(float[],float,int,int) -> d
-    65:65:boolean apply(org.artyomcool.retrace.MethodMapping) -> a
+    65:65:boolean apply(com.github.artyomcool.retrace.MethodMapping) -> a
     62:62:boolean apply(java.lang.Object) -> a
 com.google.common.primitives.Floats$FloatArrayAsList -> a.a.a.l.n:
     float[] array -> a
@@ -17033,7 +17033,7 @@ com.google.thirdparty.publicsuffix.TrieParser -> a.a.b.a.c:
     65:103:int doParseTrieToBuilder(java.util.List,java.lang.CharSequence,com.google.common.collect.ImmutableMap$Builder) -> a
     112:127:java.lang.CharSequence reverse(java.lang.CharSequence) -> b
     131:134:void swap(char[],int,int) -> a
-org.artyomcool.retrace.ClassMapping -> b.a.a.a:
+com.github.artyomcool.retrace.ClassMapping -> b.a.a.a:
     java.util.regex.Pattern className -> e
     java.util.regex.Pattern methodName -> a
     com.google.common.collect.Multimap methods -> b
@@ -17043,7 +17043,7 @@ org.artyomcool.retrace.ClassMapping -> b.a.a.a:
     33:39:void addLine(java.lang.String) -> a
     42:42:java.lang.String getName() -> b
     46:46:java.util.Collection getMethods(java.lang.String) -> b
-org.artyomcool.retrace.MethodMapping -> b.a.a.b:
+com.github.artyomcool.retrace.MethodMapping -> b.a.a.b:
     java.lang.String ret -> d
     java.lang.String args -> e
     java.lang.String name -> a
@@ -17053,12 +17053,12 @@ org.artyomcool.retrace.MethodMapping -> b.a.a.b:
     36:36:java.lang.String getName() -> b
     40:40:boolean inRange(int) -> a
     45:45:java.lang.String toString() -> toString
-org.artyomcool.retrace.Retrace -> b.a.a.c:
+com.github.artyomcool.retrace.Retrace -> b.a.a.c:
     java.util.Map classes -> a
-    org.artyomcool.retrace.StackTraceAnalyzer analyzer -> b
-    32:32:org.artyomcool.retrace.ClassMapping getClass(java.lang.String) -> a
+    com.github.artyomcool.retrace.StackTraceAnalyzer analyzer -> b
+    32:32:com.github.artyomcool.retrace.ClassMapping getClass(java.lang.String) -> a
     36:43:java.lang.String stacktrace(java.io.BufferedReader) -> a
-org.artyomcool.retrace.StackTraceAnalyzer -> b.a.a.d:
+com.github.artyomcool.retrace.StackTraceAnalyzer -> b.a.a.d:
     java.lang.String AT_PREFIX -> b
     java.lang.String CAUSED_BY_PREFIX -> c
     java.util.regex.Pattern AT_PATTERN -> d
@@ -17068,8 +17068,8 @@ org.artyomcool.retrace.StackTraceAnalyzer -> b.a.a.d:
     82:88:void appendMethod(java.lang.StringBuilder,java.lang.String,java.lang.String,java.lang.String) -> a
     91:100:void appendException(java.lang.StringBuilder,java.lang.String) -> c
     103:107:java.lang.String resolveClassName(java.lang.String) -> a
-org.artyomcool.retrace.StackTraceAnalyzer$1 -> b.a.a.e:
+com.github.artyomcool.retrace.StackTraceAnalyzer$1 -> b.a.a.e:
     int val$lineNumberInt -> a
-    org.artyomcool.retrace.StackTraceAnalyzer this$0 -> b
-    65:65:boolean apply(org.artyomcool.retrace.MethodMapping) -> a
+    com.github.artyomcool.retrace.StackTraceAnalyzer this$0 -> b
+    65:65:boolean apply(com.github.artyomcool.retrace.MethodMapping) -> a
     62:62:boolean apply(java.lang.Object) -> a

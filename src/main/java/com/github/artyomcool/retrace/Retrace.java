@@ -1,4 +1,4 @@
-package org.artyomcool.retrace;
+package com.github.artyomcool.retrace;
 
 import java.io.BufferedReader;
 import java.io.IOException;

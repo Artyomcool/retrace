@@ -1,4 +1,4 @@
-package org.artyomcool.retrace;
+package com.github.artyomcool.retrace;
 
 import com.google.common.collect.Multimap;
 import com.google.common.collect.MultimapBuilder;
