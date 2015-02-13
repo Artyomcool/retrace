@@ -1,8 +1,12 @@
 apply plugin: 'java'
+apply plugin: 'maven'
+apply plugin: 'signing'
 
 sourceCompatibility = 1.7
 targetCompatibility = 1.7
-version = '1.0'
+version = '1.1.1'
+
+group = 'com.github.artyomcool'
 
 repositories {
     mavenCentral()
@@ -11,4 +15,69 @@ repositories {
 dependencies {
     compile 'com.google.guava:guava:18.0'
     testCompile 'junit:junit:4.11'
+}
+
+task sourcesJar(type: Jar, dependsOn:classes) {
+    classifier = 'sources'
+    from sourceSets.main.allSource
+}
+
+task javadocJar(type: Jar, dependsOn:javadoc) {
+    classifier = 'javadoc'
+    from javadoc.destinationDir
+}
+
+artifacts {
+    archives sourcesJar
+    archives javadocJar
+}
+
+signing {
+    sign configurations.archives
+}
+
+uploadArchives {
+    repositories.mavenDeployer {
+        configuration = configurations.archives
+
+        beforeDeployment { MavenDeployment deployment -> signing.signPom(deployment) }
+
+        repository(url: "https://oss.sonatype.org/service/local/staging/deploy/maven2/") {
+            authentication(userName: nexusUsername, password: nexusPassword)
+        }
+
+        pom.project {
+            name 'Retrace - reusable implementation of proguard retrace tool'
+            packaging 'jar'
+            description 'Utility for deobfuscating java stacktraces'
+            url 'http://github.com/artyomcool/retrace'
+            inceptionYear '2015'
+
+            licenses {
+                license {
+                    name 'MIT License'
+                    comments project.file('LICENSE').text
+                    distribution 'repo'
+                }
+            }
+
+            scm {
+                url 'scm:git:https://github.com/Artyomcool/retrace'
+                connection 'scm:git:https://github.com/Artyomcool/retrace.git'
+            }
+
+            developers {
+                developer {
+                    id 'Artyomcool'
+                    name 'Artyom Drozdov'
+                    email 'artyomcool2@gmail.com'
+                    url 'http://github.com/artyomcool'
+                    roles {
+                        role 'Developer'
+                    }
+                    timezone '+3'
+                }
+            }
+        }
+    }
 }

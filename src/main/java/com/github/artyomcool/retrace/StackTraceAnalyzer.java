@@ -65,11 +65,11 @@ public class StackTraceAnalyzer {
 				return input.inRange(lineNumberInt);
 			}
 		});
-		if (methods.isEmpty()) {
+		Iterator<MethodMapping> iterator = filtered.iterator();
+		if (!iterator.hasNext()) {
 			appendMethod(builder, methodName, source, lineNumber);
 			return;
 		}
-		Iterator<MethodMapping> iterator = filtered.iterator();
 		MethodMapping first = iterator.next();
 		appendMethod(builder, first.getName(), source, lineNumber);
 		while (iterator.hasNext()) {
